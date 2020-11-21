@@ -99,7 +99,7 @@ public class NumberWizard : MonoBehaviour
     //When contradiction is detected, either restarts the game or closes the executable
     private IEnumerator ContradictionDetected()
     {
-        if (GameManager.selfDestruction)
+        if (GameManager.selfDestruction == true)
         {
             backButton.SetActive(false);
             inputButtons.SetActive(false);
@@ -125,9 +125,9 @@ public class NumberWizard : MonoBehaviour
         }
         else
         {
-            float time = 2;
             WriteMessage("The number isn't within your given Range!");
 
+            float time = 3;
             while (true)
             {
                 time -= Time.deltaTime;
@@ -135,9 +135,10 @@ public class NumberWizard : MonoBehaviour
                 if(time <= 0)
                 {
                     StartRound();
+                    break;
                 }
+                yield return null;
             }
         }
-
     }
 }
