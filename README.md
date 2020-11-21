@@ -15,7 +15,7 @@ Desktop, WebGl
 Used Buttons design are downloaded from third party providers
 
 ### Project state: 
-Finished
+90% Finished
 
 ### Lessons Learned:
 Checking, wether a Parse (conversion from string to int) is possible by using TryParse() in an if-Statement.
