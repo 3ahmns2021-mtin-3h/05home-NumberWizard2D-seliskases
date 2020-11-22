@@ -18,6 +18,7 @@ Used Buttons design are downloaded from third party providers
 90% Finished
 
 ### Lessons Learned:
-Checking, wether a Parse (conversion from string to int) is possible by using TryParse() in an if-Statement.
+- Checking, wether a Parse (conversion from string to int) is possible by using TryParse() in an if-Statement.
+- If there's a while-loop in a coroutine, always check wether the return statement is within the while-loop.
 
 Copyright by seliskases
