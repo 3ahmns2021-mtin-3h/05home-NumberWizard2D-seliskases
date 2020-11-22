@@ -112,9 +112,9 @@ public class NumberWizard : MonoBehaviour
             {
                 time -= Time.deltaTime;
 
-                if (time <= 6)
+                if (time <= 4)
                 {
-                    textField.text = Mathf.FloorToInt(time).ToString();
+                    textField.text = "Self destruction in " + Mathf.FloorToInt(time).ToString();
                 }
 
                 if (time == 0)
