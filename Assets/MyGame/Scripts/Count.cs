@@ -55,7 +55,6 @@ public class Count : MonoBehaviour
         float guess;
         int count = 0;
         int value = Convert.ToInt32(GameManager.rangeIsChanging);
-        print(value);
 
         for (int n = 1; n <= CalculateMaxCount(); n++)
         {

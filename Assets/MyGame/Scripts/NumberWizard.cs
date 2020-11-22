@@ -7,7 +7,7 @@ using TMPro;
 public class NumberWizard : MonoBehaviour
 {
     public GameObject backButton;
-    public GameObject inputButtons;
+    public GameObject inputButtons, explanationText;
     public TMP_InputField inputMin, inputMax;
     public TextMeshProUGUI textField;
 
@@ -28,6 +28,7 @@ public class NumberWizard : MonoBehaviour
         isPlaying = false;
 
         inputButtons.SetActive(false);
+        explanationText.SetActive(true);
         inputMin.gameObject.SetActive(true);
         inputMax.gameObject.SetActive(true);
 
@@ -46,6 +47,7 @@ public class NumberWizard : MonoBehaviour
 
             inputMin.gameObject.SetActive(false);
             inputMax.gameObject.SetActive(false);
+            explanationText.SetActive(false);
             inputButtons.SetActive(true);
 
             isPlaying = true;
